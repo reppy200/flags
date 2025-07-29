@@ -1,0 +1,62 @@
+{
+  "name": "fast-flags",
+  "version": "1.0.0",
+  "description": "High-performance feature flag system with optimized bundle size and load times",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "analyze": "vite-bundle-analyzer",
+    "lighthouse": "lighthouse http://localhost:3000 --output html --output-path ./lighthouse-report.html",
+    "size-check": "bundlesize",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zustand": "^4.4.7",
+    "idb": "^7.1.1",
+    "comlink": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "vite": "^5.0.10",
+    "vite-bundle-analyzer": "^0.7.0",
+    "vite-plugin-pwa": "^0.17.4",
+    "workbox-window": "^7.0.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.1",
+    "@vitest/coverage-v8": "^1.1.1",
+    "bundlesize": "^0.18.1",
+    "lighthouse": "^11.4.0",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "terser": "^5.26.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32"
+  },
+  "bundlesize": [
+    {
+      "path": "./dist/assets/*.js",
+      "maxSize": "50 kB",
+      "compression": "gzip"
+    },
+    {
+      "path": "./dist/assets/*.css",
+      "maxSize": "10 kB",
+      "compression": "gzip"
+    }
+  ],
+  "keywords": [
+    "feature-flags",
+    "performance",
+    "react",
+    "typescript",
+    "optimization"
+  ],
+  "license": "MIT"
+}
