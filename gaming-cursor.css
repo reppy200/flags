@@ -1,0 +1,256 @@
+/* Gaming Cursor CSS - Add this to any website for a gaming cursor effect */
+
+/* Hide default cursor */
+* {
+    cursor: none !important;
+}
+
+/* Main cursor element */
+.gaming-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #00ff88, #00cc6a);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    transition: transform 0.1s ease;
+    box-shadow: 
+        0 0 10px #00ff88,
+        0 0 20px #00ff88,
+        0 0 30px #00ff88;
+    mix-blend-mode: screen;
+}
+
+/* Pulse rings around cursor */
+.gaming-cursor::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #00ff88;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: gaming-cursor-pulse 1.5s infinite;
+}
+
+.gaming-cursor::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #00ff88;
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: gaming-cursor-pulse 1.5s infinite 0.5s;
+}
+
+/* Hover state for interactive elements */
+.gaming-cursor.hover {
+    transform: scale(1.3);
+    background: radial-gradient(circle, #ffaa00, #ff8800);
+    box-shadow: 
+        0 0 15px #ffaa00,
+        0 0 25px #ffaa00,
+        0 0 35px #ffaa00;
+}
+
+.gaming-cursor.hover::before,
+.gaming-cursor.hover::after {
+    border-color: #ffaa00;
+}
+
+/* Click state */
+.gaming-cursor.clicking {
+    transform: scale(1.5);
+    background: radial-gradient(circle, #ff0080, #cc0066);
+    box-shadow: 
+        0 0 15px #ff0080,
+        0 0 30px #ff0080,
+        0 0 45px #ff0080;
+}
+
+.gaming-cursor.clicking::before,
+.gaming-cursor.clicking::after {
+    border-color: #ff0080;
+    animation-duration: 0.5s;
+}
+
+/* Trail particles */
+.gaming-cursor-trail {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background: radial-gradient(circle, #00ff88, transparent);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99998;
+    animation: gaming-cursor-fadeOut 0.8s ease-out forwards;
+}
+
+/* Click particles */
+.gaming-cursor-particle {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    background: #00ff88;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99997;
+    animation: gaming-cursor-particleMove 1s ease-out forwards;
+}
+
+/* Crosshair mode */
+.gaming-crosshair {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+    z-index: 99999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gaming-crosshair::before,
+.gaming-crosshair::after {
+    content: '';
+    position: absolute;
+    background: #00ff88;
+    box-shadow: 0 0 5px #00ff88;
+}
+
+.gaming-crosshair::before {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: translateY(-50%);
+}
+
+.gaming-crosshair::after {
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    transform: translateX(-50%);
+}
+
+.gaming-crosshair.active {
+    opacity: 1;
+}
+
+/* Animations */
+@keyframes gaming-cursor-pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+}
+
+@keyframes gaming-cursor-fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+}
+
+@keyframes gaming-cursor-particleMove {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--dx), var(--dy)) scale(0);
+    }
+}
+
+/* Special effects for different cursor modes */
+.gaming-cursor.sniper {
+    background: radial-gradient(circle, #ff4444, #cc2222);
+    box-shadow: 
+        0 0 10px #ff4444,
+        0 0 20px #ff4444,
+        0 0 30px #ff4444;
+}
+
+.gaming-cursor.sniper::before,
+.gaming-cursor.sniper::after {
+    border-color: #ff4444;
+}
+
+.gaming-cursor.magic {
+    background: radial-gradient(circle, #aa44ff, #8822cc);
+    box-shadow: 
+        0 0 10px #aa44ff,
+        0 0 20px #aa44ff,
+        0 0 30px #aa44ff;
+}
+
+.gaming-cursor.magic::before,
+.gaming-cursor.magic::after {
+    border-color: #aa44ff;
+}
+
+/* Dark theme variant */
+.gaming-cursor.dark {
+    background: radial-gradient(circle, #ffffff, #cccccc);
+    box-shadow: 
+        0 0 10px #ffffff,
+        0 0 20px #ffffff,
+        0 0 30px #ffffff;
+}
+
+.gaming-cursor.dark::before,
+.gaming-cursor.dark::after {
+    border-color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gaming-cursor {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .gaming-cursor::before {
+        top: -8px;
+        left: -8px;
+        width: 32px;
+        height: 32px;
+    }
+    
+    .gaming-cursor::after {
+        top: -12px;
+        left: -12px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Performance optimizations */
+.gaming-cursor,
+.gaming-cursor::before,
+.gaming-cursor::after,
+.gaming-cursor-trail,
+.gaming-cursor-particle,
+.gaming-crosshair {
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+}
