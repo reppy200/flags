@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer frame -->
+  <rect x="4" y="4" width="24" height="24" fill="none" stroke="#FF4655" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Main crosshair lines -->
+  <g stroke="#FF4655" stroke-width="2.5" fill="none">
+    <!-- Vertical line with gap -->
+    <line x1="16" y1="6" x2="16" y2="13"/>
+    <line x1="16" y1="19" x2="16" y2="26"/>
+    
+    <!-- Horizontal line with gap -->
+    <line x1="6" y1="16" x2="13" y2="16"/>
+    <line x1="19" y1="16" x2="26" y2="16"/>
+  </g>
+  
+  <!-- Center square -->
+  <rect x="13" y="13" width="6" height="6" fill="none" stroke="#FF4655" stroke-width="1.5"/>
+  
+  <!-- Center dot -->
+  <circle cx="16" cy="16" r="1.5" fill="#FF4655"/>
+  
+  <!-- Valorant-style corner elements -->
+  <g stroke="#FF4655" stroke-width="2" fill="none">
+    <!-- Top-left corner -->
+    <path d="M 8 8 L 8 12 M 8 8 L 12 8"/>
+    <!-- Top-right corner -->
+    <path d="M 24 8 L 24 12 M 24 8 L 20 8"/>
+    <!-- Bottom-left corner -->
+    <path d="M 8 24 L 8 20 M 8 24 L 12 24"/>
+    <!-- Bottom-right corner -->
+    <path d="M 24 24 L 24 20 M 24 24 L 20 24"/>
+  </g>
+  
+  <!-- Inner corner details -->
+  <g stroke="#FF4655" stroke-width="1" fill="#FF4655" opacity="0.3">
+    <circle cx="10" cy="10" r="1"/>
+    <circle cx="22" cy="10" r="1"/>
+    <circle cx="10" cy="22" r="1"/>
+    <circle cx="22" cy="22" r="1"/>
+  </g>
+  
+  <!-- Dynamic elements -->
+  <g stroke="#FF7B88" stroke-width="1" fill="none" opacity="0.8">
+    <line x1="14" y1="2" x2="18" y2="2"/>
+    <line x1="14" y1="30" x2="18" y2="30"/>
+    <line x1="2" y1="14" x2="2" y2="18"/>
+    <line x1="30" y1="14" x2="30" y2="18"/>
+  </g>
+</svg>
