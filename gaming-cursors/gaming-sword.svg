@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sword blade -->
+  <path d="M 16 2 L 18 2 L 19 16 L 17 16 Z" fill="#C0C0C0" stroke="#808080" stroke-width="1"/>
+  
+  <!-- Sword edge -->
+  <line x1="16" y1="2" x2="17" y2="16" stroke="#FFFFFF" stroke-width="0.5"/>
+  
+  <!-- Cross guard -->
+  <rect x="12" y="15" width="8" height="2" fill="#8B4513" stroke="#654321" stroke-width="0.5"/>
+  
+  <!-- Handle -->
+  <rect x="15" y="17" width="2" height="8" fill="#8B4513" stroke="#654321" stroke-width="0.5"/>
+  
+  <!-- Handle grip -->
+  <g stroke="#654321" stroke-width="0.3" fill="none">
+    <line x1="15" y1="18" x2="17" y2="18"/>
+    <line x1="15" y1="20" x2="17" y2="20"/>
+    <line x1="15" y1="22" x2="17" y2="22"/>
+    <line x1="15" y1="24" x2="17" y2="24"/>
+  </g>
+  
+  <!-- Pommel -->
+  <circle cx="16" cy="26" r="2" fill="#8B4513" stroke="#654321" stroke-width="0.5"/>
+  
+  <!-- Blade highlight -->
+  <path d="M 16.5 3 L 17.5 3 L 18 15 L 17 15 Z" fill="#E0E0E0" opacity="0.5"/>
+  
+  <!-- Magical glow effect -->
+  <g stroke="#00FFFF" stroke-width="1" fill="none" opacity="0.4">
+    <path d="M 15.5 2 L 18.5 2 L 19.5 16 L 16.5 16 Z"/>
+  </g>
+  
+  <!-- Sparkle effects -->
+  <g fill="#00FFFF" opacity="0.6">
+    <circle cx="14" cy="6" r="0.5"/>
+    <circle cx="19" cy="10" r="0.5"/>
+    <circle cx="13" cy="13" r="0.5"/>
+  </g>
+</svg>

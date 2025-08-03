@@ -1,0 +1,37 @@
+
+🎮 GAMING CURSOR PACK
+====================
+
+📋 INCLUDED CURSORS:
+1. crosshair-red.svg - Red FPS crosshair
+2. crosshair-green.svg - Green tactical crosshair  
+3. sniper-scope.svg - Sniper scope reticle
+4. precision-blue.svg - Blue precision cursor
+5. gaming-sword.svg - Fantasy gaming sword
+
+🛠️ INSTALLATION:
+1. For Windows: Convert SVG to .CUR format using online converters
+2. For Web/CSS: Use SVG files directly as custom cursors
+3. For Gaming Software: Some games accept .PNG cursor overlays
+
+🔧 CONVERSION TOOLS:
+- Online: https://convertio.co/svg-cur/
+- Software: GIMP, Photoshop, or Inkscape
+- Command line: ImageMagick
+
+💡 USAGE TIPS:
+- Use red crosshairs for high contrast visibility
+- Green crosshairs work well in most environments  
+- Blue precision cursors are great for design work
+- Sniper scope for immersive gaming experience
+
+⚠️ COMPATIBILITY:
+- Windows: .CUR or .ICO format
+- Web browsers: SVG or PNG with CSS
+- Gaming overlays: PNG format usually preferred
+
+🎯 GAMING APPLICATIONS:
+- FPS Games: CS:GO, Valorant, Apex Legends
+- Strategy Games: StarCraft II, Age of Empires
+- RPG Games: World of Warcraft, Final Fantasy XIV
+- Design Software: Photoshop, Blender, CAD programs

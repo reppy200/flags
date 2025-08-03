@@ -1,0 +1,42 @@
+BLOXSTRAP FAST FLAGS SETUP GUIDE
+=================================
+
+📁 FILES INCLUDED:
+- bloxstrap-performance-flags.json (Maximum FPS)
+- bloxstrap-network-flags.json (Low Ping)
+- bloxstrap-low-end-flags.json (Low-End Devices)
+- bloxstrap-balanced-flags.json (Balanced Performance)
+
+🚀 QUICK SETUP:
+1. Download and install Bloxstrap + .NET 6 Runtime
+2. Open Bloxstrap → Fast Flags
+3. Click "Import JSON"
+4. Copy contents from your chosen .json file
+5. Paste and apply
+6. Launch Roblox through Bloxstrap
+
+💡 RECOMMENDATIONS:
+- Start with balanced-flags.json
+- Use performance-flags.json for maximum FPS
+- Use network-flags.json for competitive gaming
+- Use low-end-flags.json for older computers
+
+⚠️ IMPORTANT:
+- Always backup your current settings
+- Test flags gradually
+- Monitor for stability issues
+- Some flags may cause visual changes
+
+🔧 TROUBLESHOOTING:
+- If issues occur, clear all flags and restart
+- Try balanced flags first
+- Gradually add more aggressive optimizations
+- Check Bloxstrap Discord for help
+
+📊 EXPECTED RESULTS:
+Performance Flags: 200-400+ FPS increase
+Network Flags: 10-50ms ping reduction
+Low-End Flags: 50-150+ FPS increase
+Balanced Flags: 50-100+ FPS increase
+
+For detailed information, see README.md
